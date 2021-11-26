@@ -46,7 +46,8 @@
     margin-top: -23px;
     font-size: 18px;
     color: #ffffff;
-    background-color: #64dd17;
+    /*changed color*/
+    background-color: #dc3545;
     left: 20px;
     text-align: center;
     -webkit-transition-duration: 500ms;

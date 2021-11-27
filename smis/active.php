@@ -283,14 +283,14 @@ include "config.php";
         <div class="row">
           <div class="col-lg-12">
             <h3 class="page-header"><i class="fa fa fa-bars"></i>
-             <a href="cookery.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Cookery</a>
-            <a href="food&beverage.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Food & Beverage</a>
-            <a href="foodproduction.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Food Production</a>
-            <a href="housekeeping.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >House Keeping</a>
-            <a href="housemanagement.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >House Management</a>
-            <a href="pastry.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Pastry</a>
-            </h3>
-            <ol class="breadcrumb">
+             <a href="cybercafe.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Cyber Cafe Services</a>
+            <a href="computerpackages.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Computer Packages</a>
+            <a href="graphicsdesign.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Graphics Design</a>
+            <a href="accountingpackages .php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Accounting Packages </a>
+            <a href="photography&film.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Photography & Film</a>
+            <a href="dJclasses .php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >DJ Classes </a>
+            <a href="driving.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Driving Academy</a>
+            </h3>            <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="home.php">Home</a></li>
               <li><i class="fa fa-bars"></i>Pages</li>
               <li><i class="fa fa-square-o"></i>Register Students</li>

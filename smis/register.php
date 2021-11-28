@@ -12,7 +12,7 @@ include "config.php";
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Nairobi Precision Community College - (Cyber cafe services , Computer packages, Graphics design classes , Accounting packages , Photography & Film , DJ Classes, Driving Academy ) ">
   <link rel="shortcut icon" href="../assets/img/favicon.png">
-  <title>Nairobi Precision Community College - (Cyber cafe services , Computer packages, Graphics design classes , Accounting packages , Photography & Film , DJ Classes, Driving Academy ) </title>
+  <title>Nairobi Precision Community College - (Cyber cafe services , Computer packages, Graphics design classes , Accounting packages , Photography & Film , DJ Classes, Driving Academy. ) </title>
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- bootstrap theme -->

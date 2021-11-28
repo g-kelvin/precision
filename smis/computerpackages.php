@@ -286,12 +286,12 @@ include "config.php";
         <div class="row">
           <div class="col-lg-12">
             <h3 class="page-header"><i class="fa fa fa-bars"></i> Active <br>
-             <a href="cybercafe.php" type="button" class="btn btn-primary" style="text-transform: capitalize;">Cookery</a>
+            <a href="cybercafe.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Cyber Cafe Services</a>
             <a href="computerpackages.php" type="button" class="btn btn-warning" style="text-transform: capitalize;" >Computer Packages</a>
             <a href="graphicsdesign.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Graphics Design</a>
-            <a href="accountingpackages .php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Accounting Packages </a>
+            <a href="accountingpackages.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Accounting Packages </a>
             <a href="photography&film.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Photography & Film</a>
-            <a href="dJclasses .php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >DJ Classes </a>
+            <a href="dJclasses.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >DJ Classes </a>
             <a href="driving.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Driving Academy</a>
             <br><br>
 

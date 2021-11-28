@@ -1,7 +1,7 @@
-
 <?php
 include "config.php"; 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,9 +63,8 @@ include "config.php";
         <!--  search form start -->
         <ul class="nav top-menu">
           <li>
-            <form class="navbar-form" action=" search.php" method="POST">
-              <input class="form-control" placeholder="Search" type="text" name="search">
-              <button class="btn btn-primary" type="submit" name="submit"> Search</button>
+            <form class="navbar-form">
+              <input class="form-control" placeholder="Search" type="text">
             </form>
           </li>
         </ul>
@@ -194,6 +193,7 @@ include "config.php";
               <li class="eborder-top">
                 <a href="home.php"><i class="icon_profile"></i> Home</a>
               </li>
+
               <li>
                 <a href="active.php"><i class="icon_clock_alt"></i> Active Students</a>
               </li>
@@ -282,30 +282,30 @@ include "config.php";
         <div class="row">
           <div class="col-lg-12">
             <h3 class="page-header"><i class="fa fa fa-bars"></i> Active <br>
-             <a href="cookery.php" type="button" class="btn btn-primary" style="text-transform: capitalize;">Cookery</a>
-            <a href="food&beverage.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Food & Beverage</a>
-            <a href="foodproduction.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Food Production</a>
-            <a href="housekeeping.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >House Keeping</a>
-            <a href="housemanagement.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >House Management</a>
-            <a href="pastry.php" type="button" class="btn btn-warning" style="text-transform: capitalize;" >Pastry</a>
-            <a href="bakery.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Bakery</a>
+             <a href="cybercafe.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Cyber Cafe Services</a>
+            <a href="computerpackages.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Computer Packages</a>
+            <a href="graphicsdesign.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Graphics Design</a>
+            <a href="accountingpackages.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Accounting Packages </a>
+            <a href="photography&film.php" type="button" class="btn btn-warning" style="text-transform: capitalize;" > Photography & Film</a>
+            <a href="dJclasses.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >DJ Classes </a>
+            <a href="driving.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Driving Academy</a>
             <br><br>
 
             <?php 
                           
-                            $feedback="SELECT * from students WHERE status = 'Active' AND Course = 'Pastry' ORDER BY studentid DESC  LIMIT 10 ";
+                            $feedback="SELECT * from students WHERE status = 'Active' AND Course = 'Photography & Film' ORDER BY studentid DESC  LIMIT 10 ";
                             if ($result=mysqli_query($con,$feedback))
                             {
                             // Return the number of rows in result set
                             $rows=mysqli_num_rows($result);
-                            echo "<b style = 'color: green'> Active Pastry Students = ". $rows. " ". "</b>";
+                            echo "<b style = 'color: green'> Active Photography & Film Students = ". $rows. " ". "</b>";
                             // Free result set
                             mysqli_free_result($result);
                             } ?>
             </h3>            <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="home.php">Home</a></li>
               <li><i class="fa fa-bars"></i>Pages</li>
-              <li><i class="fa fa-square-o"></i>Pastry Students</li>
+              <li><i class="fa fa-square-o"></i>Photography & Film Students</li>
             </ol>
           </div>
         </div>
@@ -333,7 +333,7 @@ include "config.php";
 
   <?php
    
-    $feedback="SELECT * from students WHERE status = 'Active' AND Course = 'Pastry' ";
+    $feedback="SELECT * from students WHERE status = 'Active' AND Course = 'Photography & Film' ";
       $rest= mysqli_query($con,$feedback);
       while($rows= mysqli_fetch_assoc($rest)){
          ?> 

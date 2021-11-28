@@ -345,9 +345,9 @@ include "config.php";
                 <option value="Cyber Cafe Services">Cyber Cafe Services</option>
                 <option value="Computer Packages">Computer Packages</option>
                 <option value="Graphics Design">Graphics Design</option>
-                <option value="Accounting Packages">Accounting Packages </option>
+                <option value="Accounting Packages">Accounting Packages</option>
                 <option value="Photography & Film">Photography & Film</option>
-                <option value="DJ Classes">DJ Classes </option>
+                <option value="DJ Classes">DJ Classes</option>
                 <option value="Driving Academy">Driving Academy</option>
               </select>
               </div>  
@@ -436,7 +436,7 @@ include "config.php";
           </div>  
           <div class="form-group">
             <label>Admission No.</label>
-            <input type="text" name="adminno" placeholder="Enter Admission No. Here.." class="form-control">
+            <input type="text" name="adminno" placeholder="Enter Admission No. Here.. (Must be Unique)" class="form-control" required>
           </div>
 
           <div class="row">

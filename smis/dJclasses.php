@@ -305,7 +305,7 @@ include "config.php";
             </h3>            <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="home.php">Home</a></li>
               <li><i class="fa fa-bars"></i>Pages</li>
-              <li><i class="fa fa-square-o"></i>House Management Students</li>
+              <li><i class="fa fa-square-o"></i>DJ Classes Students</li>
             </ol>
           </div>
         </div>
@@ -333,7 +333,7 @@ include "config.php";
 
   <?php
    
-    $feedback="SELECT * from students WHERE status = 'Active' AND Course = 'House Management' ";
+    $feedback="SELECT * from students WHERE status = 'Active' AND Course = 'DJ Classes' ";
       $rest= mysqli_query($con,$feedback);
       while($rows= mysqli_fetch_assoc($rest)){
          ?> 

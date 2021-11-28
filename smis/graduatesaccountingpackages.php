@@ -2,7 +2,6 @@
 <?php
 include "config.php"; 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,9 +10,9 @@ include "config.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
-  <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  <link rel="shortcut icon" href="img/favicon.png">
-  <title>Kasarani Catering College</title>
+  <meta name="keyword" content="Nairobi Precision Community College - (Cyber cafe services , Computer packages, Graphics design classes , Accounting packages , Photography & Film , DJ Classes, Driving Academy ) ">
+  <link rel="shortcut icon" href="../assets/img/favicon.png">
+   <title>Nairobi Precision Community College - (Cyber cafe services , Computer packages, Graphics design classes , Accounting packages , Photography & Film , DJ Classes, Driving Academy ) </title>
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- bootstrap theme -->
@@ -57,7 +56,7 @@ include "config.php";
       </div>
 
       <!--logo start-->
-      <a href="home.php" class="logo">Kasarani Catering <span class="lite">College</span></a>
+      <a href="home.php" class="logo">Nairobi Precision <span class="lite">SMIS</span></a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">
@@ -195,7 +194,7 @@ include "config.php";
               <li class="eborder-top">
                 <a href="home.php"><i class="icon_profile"></i> Home</a>
               </li>
-            
+             
               <li>
                 <a href="active.php"><i class="icon_clock_alt"></i> Active Students</a>
               </li>
@@ -284,23 +283,23 @@ include "config.php";
         <div class="row">
           <div class="col-lg-12">
             <h3 class="page-header"><i class="fa fa fa-bars"></i> Graduates<br>
-             <a href="graduatescookery.php" type="button" class="btn btn-primary" style="text-transform: capitalize;"> Graduates Cookery</a>
-            <a href="graduatesfood&beverage.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Graduates Food & Beverage</a>
-            <a href="graduatesfoodproduction.php" type="button" class="btn btn-warning" style="text-transform: capitalize;" > Graduates Food Production</a>
-            <a href="graduateshousekeeping.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Graduates House Keeping</a>
-            <a href="graduateshousemanagement.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Graduates House Management</a>
-            <a href="graduatespastry.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Graduates Pastry</a>
-            <a href="graduatesbakery.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Graduates Bakery</a>
+            <a href="graduatescybercafe.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Cyber Cafe Services</a>
+          <a href="graduatescomputerpackages.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Computer Packages</a>
+          <a href="graduatesgraphicsdesign.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Graphics Design</a>
+          <a href="graduatesaccountingpackages.php" type="button" class="btn btn-warning" style="text-transform: capitalize;" >Accounting Packages </a>
+          <a href="graduatesphotography&film.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Photography & Film</a>
+          <a href="graduatesdJclasses.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >DJ Classes </a>
+          <a href="graduatesdriving.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Driving Academy</a>
             <br><br>
 
             <?php 
                           
-                            $feedback="SELECT * from students WHERE status = 'Graduated' AND Course = 'Food Production' ORDER BY studentid DESC  LIMIT 10 ";
+                            $feedback="SELECT * from students WHERE status = 'Graduated' AND Course = 'Accounting Packages' ORDER BY studentid DESC  LIMIT 10 ";
                             if ($result=mysqli_query($con,$feedback))
                             {
                             // Return the number of rows in result set
                             $rows=mysqli_num_rows($result);
-                            echo "<b style = 'color: green'> Graduates Food Production Students = ". $rows. " ". "</b>";
+                            echo "<b style = 'color: green'> Graduates Accounting Packages Students = ". $rows. " ". "</b>";
                             // Free result set
                             mysqli_free_result($result);
                             } ?>
@@ -326,7 +325,7 @@ include "config.php";
       <th scope="col">Email</th>
       <th scope="col">Fees Paid</th>
       <th scope="col">Status</th>
-      <th scope="col">View</th>
+     <th scope="col">View</th>
       <th scope="col">Edit</th>
 
     </tr>
@@ -335,7 +334,7 @@ include "config.php";
 
   <?php
    
-       $feedback="SELECT * from students WHERE status = 'Graduated' AND Course = 'Food Production' ";
+       $feedback="SELECT * from students WHERE status = 'Graduated' AND Course = 'Accounting Packages' ";
       $rest= mysqli_query($con,$feedback);
       while($rows= mysqli_fetch_assoc($rest)){
          ?> 
@@ -352,8 +351,8 @@ include "config.php";
             <td> <a href="update.php?GetID=<?php echo $rows['studentid']  ?>" class="btn btn-success" ><?php  echo $rows['status']; ?></td> 
               <?php } else { ?>
                <td> <a href="update.php?GetID=<?php echo $rows['studentid']  ?>" class="btn btn-danger" disabled ><?php  echo $rows['status']; ?></td>  <?php }  ?>
-            <td> <a href="view.php?GetID=<?php echo $rows['studentid']  ?>" class="btn btn-primary"  >View</td>
-             <td> <a href="edit.php?GetID=<?php echo $rows['studentid']  ?>" class="btn btn-primary"  >Edit</td>
+            <td>  <button name= "submit" type="button" class="btn btn-primary">View</button></td>
+            
 
          </tr> 
 

@@ -288,9 +288,9 @@ include "config.php";
              <a href="graduatescybercafe.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Cyber Cafe Services</a>
             <a href="graduatescomputerpackages.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Computer Packages</a>
             <a href="graduatesgraphicsdesign.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Graphics Design</a>
-            <a href="graduatesaccountingpackages .php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Accounting Packages </a>
+            <a href="graduatesaccountingpackages.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Accounting Packages </a>
             <a href="graduatesphotography&film.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Photography & Film</a>
-            <a href="graduatesdJclasses .php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >DJ Classes </a>
+            <a href="graduatesdJclasses.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >DJ Classes </a>
             <a href="graduatesdriving.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Driving Academy</a>
             </h3>            <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="home.php">Home</a></li>

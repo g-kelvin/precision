@@ -10,9 +10,9 @@ include "config.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
-  <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  <link rel="shortcut icon" href="img/favicon.png">
-  <title>Kasarani Catering College</title>
+  <meta name="keyword" content="Nairobi Precision Community College - (Cyber cafe services , Computer packages, Graphics design classes , Accounting packages , Photography & Film , DJ Classes, Driving Academy ) ">
+  <link rel="shortcut icon" href="../assets/img/favicon.png">
+   <title>Nairobi Precision Community College - (Cyber cafe services , Computer packages, Graphics design classes , Accounting packages , Photography & Film , DJ Classes, Driving Academy ) </title>
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- bootstrap theme -->
@@ -56,7 +56,7 @@ include "config.php";
       </div>
 
       <!--logo start-->
-      <a href="home.php" class="logo">Kasarani Catering <span class="lite">College</span></a>
+     <a href="home.php" class="logo">Nairobi Precision <span class="lite">SMIS</span></a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">

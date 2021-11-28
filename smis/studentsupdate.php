@@ -1,6 +1,6 @@
 <?php
   
-$con= mysqli_connect("localhost","kasaranicatering", "QbEAeL5!r$,(","kasaranicatering_kasaranicatering");
+include "config.php"; 
 
     $query = "SELECT * FROM students";
 

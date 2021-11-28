@@ -79,7 +79,7 @@ include "config.php";
 
       <div class="credits">
          
-          <a href="#" style="color: black">Software Technology Kenya </a>
+          <a href="softwaretechn.co.ke" style="color: white"> <strong> Software Technology Kenya </strong>  </a>
         </div>
     </div>
   </div>

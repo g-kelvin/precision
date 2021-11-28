@@ -2,7 +2,6 @@
 <?php
 include "config.php"; 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,7 +56,7 @@ include "config.php";
       </div>
 
       <!--logo start-->
-     <a href="home.php" class="logo">Nairobi Precision <span class="lite">SMIS</span></a>
+      <a href="home.php" class="logo">Nairobi Precision <span class="lite">SMIS</span></a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">
@@ -231,7 +230,7 @@ include "config.php";
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="register.php">Register Students</a></li>
+              <li><a class="" href="register.php">Register Student</a></li>
               <!-- <li><a class="" href="form_validation.html">Form Validation</a></li> -->
             </ul>
           </li>
@@ -242,7 +241,7 @@ include "config.php";
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-             <li><a class="" href="active.php">Active Students</a></li>
+              <li><a class="" href="active.php">Active Students</a></li>
               <li><a class="" href="graduate.php">Graduates</a></li>
               <li><a class="" href="display.php">All Students</a></li>
             </ul>
@@ -256,6 +255,7 @@ include "config.php";
                       </a>
 
           </li>
+          
       
 
           <li class="sub-menu ">
@@ -282,124 +282,90 @@ include "config.php";
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa fa-bars"></i> View All Data <br>
-             <a href="cookery.php" type="button" class="btn btn-danger" style="text-transform: capitalize;">Go Back</a>          
+            <h3 class="page-header"><i class="fa fa fa-bars"></i>
+             <a href="cybercafe.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Cyber Cafe Services</a>
+            <a href="computerpackages.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Computer Packages</a>
+            <a href="graphicsdesign.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Graphics Design</a>
+            <a href="accountingpackages.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >Accounting Packages </a>
+            <a href="photography&film.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Photography & Film</a>
+            <a href="dJclasses.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" >DJ Classes </a>
+            <a href="driving.php" type="button" class="btn btn-primary" style="text-transform: capitalize;" > Driving Academy</a>
             </h3>            <ol class="breadcrumb">
-              <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+              <li><i class="fa fa-home"></i><a href="home.php">Home</a></li>
               <li><i class="fa fa-bars"></i>Pages</li>
-              <li><i class="fa fa-square-o"></i>Student Information</li>
+              <li><i class="fa fa-square-o"></i>Register Students</li>
             </ol>
           </div>
         </div>
 
-         <?php
+
+<!-- start -->
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Admission No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Campus</th>
+      <th scope="col">Course</th>
+      <th scope="col">Course Duration</th>
+      <th scope="col">Phone No</th>
+      <th scope="col">Email</th>
+      <th scope="col">Fees Paid</th>
+      <th scope="col">Status</th>
+     <th scope="col">View</th>
+      <th scope="col">Edit</th>
+    </tr>
+  </thead>
+
+
+  <?php
    
-    if(isset($_GET['GetID']))
-      $studid = $_GET['GetID'];
-    {
-    $feedback="SELECT * from students where studentid = $studid  ";
+    $feedback="SELECT * from students WHERE status = 'pending' ORDER BY studentid DESC  LIMIT 10 ";
       $rest= mysqli_query($con,$feedback);
       while($rows= mysqli_fetch_assoc($rest)){
-       
-        $fname = $rows['fname'];
-        $lname = $rows['lname'];
-        $address = $rows['address'];
-        $town= $rows['town'];
-        $county = $rows['county'];
-        $postal = $rows['postal'];
-        $grade = $rows['grade'];
-        $course = $rows['course'];
-        $dob = $rows['dob'];
-        $religion = $rows['religion'];
-        $course_duration = $rows['course_duration'];
-        $campus = $rows['campus'];
-        $idno = $rows['idno'];
-        $paid_by = $rows['paid_by'];
-        $dateofadmin = $rows['dateofadmin'];
-        $gender = $rows['gender'];
-        $tel = $rows['tel'];
-        $email = $rows['email'];
-        $adminno = $rows['adminno'];
-        $fees_paid = $rows['fees_paid'];
-        $admitted_by= $rows['admitted_by'];
-        $additional= $rows['additional'];
-        $status= $rows['status'];
-       
-         }
+         ?> 
+         <tr>
+            <td> <?php echo $rows['adminno'];  ?></td>
+            <td> <?php echo $rows['fname']." ".$rows['lname'];  ?></td>
+            <td> <?php echo $rows['campus'];  ?></td>
+            <td> <?php echo $rows['course'];  ?></td>
+            <td> <?php echo $rows['course_duration'];  ?></td>
+            <td> <?php echo $rows['tel'];  ?></td>
+            <td> <?php echo $rows['email'];  ?></td>
+            <td> <?php echo $rows['fees_paid'];  ?></td>
+            <?php if( $rows['status']== 'Pending')  { ?>
+            <td> <a href="confirm.php?GetID=<?php echo $rows['studentid']  ?>" class="btn btn-success" ><?php  echo $rows['status']; ?></td> 
+              <?php } else { ?>
+               <td> <a href="confirm.php?GetID=<?php echo $rows['studentid']  ?>" class="btn btn-danger" disabled ><?php  echo $rows['status']; ?></td>  <?php }  ?>
+           <td> <a href="view.php?GetID=<?php echo $rows['studentid']  ?>" class="btn btn-primary"  >View</td>
+             <td> <a href="edit.php?GetID=<?php echo $rows['studentid']  ?>" class="btn btn-primary"  >Edit</td>
+            
+
+         </tr> 
 
 
 
 
+
+
+
+
+<?php
 }
 
-          ?>
-
-
-
-          <!-- start -->
-          <div class="row">
-           <center> <H2 style="color: blue" >Personal Information </H2> </center>
-           <hr>
-          <div class="col-6 col-md-4"> <img src="img/dp-01.png" width="100">
-            <br>
-            <h4 style="color: blue">Name: <?php echo $fname ." ". $lname;  ?> </h4>
-            <h4 style="color: blue">Status: <?php echo $status ;  ?> </h4>
-          </div>
-          <div class="col-6 col-md-4">
-            <B> BIO-DATA </B> <br> <hr>
-            <b style="color: blue">Gender:</b> <?php echo $gender ?> <br>
-            <b style="color: blue">Date of Birth:</b> <?php echo $dob ?><br>
-            <b style="color: blue">ID Number:</b> <?php echo $idno ?><br>
-            <b style="color: blue">Admission Number:</b> <?php echo $adminno ?><br>
-            <b style="color: blue">Religion:</b> <?php echo $religion ?><br>
-              <b style="color: blue">K.C.S.E Grade:</b> <?php echo $grade ?><br>
-
-          </div>
-          <div class="col-6 col-md-4">
-             <B> CONTACT INFORMATION </B> <br> <hr>
-             <b style="color: blue">Phone Number:</b> <?php echo $tel ?><br>
-             <b style="color: blue">Email:</b> <?php echo $email ?><br>
-             <b style="color: blue">Postal Code:</b> <?php echo $postal ?><br>
-             <b style="color: blue">Physical Address:</b> <?php echo $address ?><br>
-             <b style="color: blue">County:</b> <?php echo $county ?><br>
-             <b style="color: blue">Town:</b> <?php echo $town ?><br>
-          </div>
-        </div>
-        <hr>
-
-        <div class="row">
-          <center> <H2 style="color: blue" >School Information </H2> </center>
-        <div class="col-6 col-md-4" style="background-color: blue"><br><br>
-           <B style="color: white"> COURSE INFORMATION </B> <br> <hr>
-           <b style="color: white">Campus:</b> <?php echo "<i style ='color:black'>". $campus ."</i>" ?><br>
-           <b style="color: white">Course:</b> <?php echo "<i style ='color:black'>". $course ."</i>" ?><br>
-           <b style="color: white">Fees Paid:</b> <?php echo "<i style ='color:black'>". $fees_paid ."</i>" ?><br>
-           <b style="color: white">Course Duration:</b> <?php echo "<i style ='color:black'>". $course_duration ."</i>" ?><br>
 
 
 
 
-        <br></div> 
-        <!-- end -->
-        <div class="col-6 col-md-4" style="background-color: brown"><br><br>
-           <B style="color: white"> ADMISSION INFORMATION </B> <br> <hr>
-           <b style="color: white">Date of Admission:</b> <?php echo "<i style ='color:black'>". $dateofadmin ."</i>" ?><br>
-           <b style="color: white">Admitted By:</b> <?php echo "<i style ='color:black'>". $admitted_by ."</i>" ?><br>
-           <b style="color: white">Fees Paid By:</b> <?php echo "<i style ='color:black'>". $paid_by ."</i>" ?><br><br><br>
-
-        </div>
-        <div class="col-6 col-md-4" style="background-color: green"><br><br>
-         <B style="color: white"> ADDITIONAL INFORMATION </B> <br> <hr>
-         <b style="color: white">More About The Student:</b> <?php echo "<i style ='color:black'>". $additional ."</i>" ?><br><br><br><br><br>
-
-        </div>
-      </div>
 
 
 
 
-          <!-- end -->
+  ?>
 
+<!-- end -->
+
+</table>
 
 
 

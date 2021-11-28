@@ -1,6 +1,6 @@
 <?php 
 
-$con= mysqli_connect("localhost","kasaranicatering", "QbEAeL5!r$,(","kasaranicatering_kasaranicatering");
+include "config.php"; 
 
 if($con){
   if(isset($_POST['submit'])){

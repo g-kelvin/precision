@@ -6,14 +6,14 @@ include "config.php";
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+ <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+  <meta name="description" content="Nairobi Precision Community College - (Cyber cafe services , Computer packages, Graphics design classes , Accounting packages , Photography & Film , DJ Classes, Driving Academy ) ">
   <meta name="author" content="GeeksLabs">
-  <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  <link rel="shortcut icon" href="img/favicon.png">
+  <meta name="keyword" content="Nairobi Precision Community College - (Cyber cafe services , Computer packages, Graphics design classes , Accounting packages , Photography & Film , DJ Classes, Driving Academy ) ">
+  <link rel="shortcut icon" href="../assets/img/favicon.png">
 
-  <title>Kasarani Catering College</title>
+  <title>Nairobi Precision Community College - (Cyber cafe services , Computer packages, Graphics design classes , Accounting packages , Photography & Film , DJ Classes, Driving Academy ) </title>
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@ include "config.php";
       <div class="login-wrap">
 
        <center>
-         <img src="img/logo-01.png" width="150">
+         <img src="../assets/img/smis-01.png" width="150">
        </center><br>
 
 
@@ -69,7 +69,7 @@ include "config.php";
     <div class="text-right">
       <div class="credits">
          
-          <a href="#" style="color: black">Software Technology Kenya </a>
+           <a href="softwaretechn.co.ke" style="color: white"> <strong> Software Technology Kenya </strong>  </a>
         </div>
     </div>
   </div>

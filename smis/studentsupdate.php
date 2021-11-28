@@ -34,7 +34,7 @@ include "config.php";
 
         $result = mysqli_query($con, $query);
         if($result){
-          header('location: https://kasaranicateringcollege.co.ke/smis/active.php');
+          header('location: display.php');
             
         }
         else

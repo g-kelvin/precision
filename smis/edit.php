@@ -266,9 +266,10 @@ include "config.php";
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="kasaranicampus.php">Kasarani Campus</a></li>
-              <li><a class="" href="machakoscampus.php"><span>Machakos Campus</span></a></li>
-              <li><a class="" href="kituicampus.php"><span>Kitui Campus</span></a></li>
+              <li><a class="" href="online.php">Online Applications</a></li>
+             <li><a class="" href="active.php">Active Students</a></li>
+              <li><a class="" href="graduate.php">Graduates</a></li>
+              <li><a class="" href="display.php">All Students</a></li>
             </ul>
           </li>
 

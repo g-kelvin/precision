@@ -15,7 +15,7 @@ if($con){
                 echo "Login Successful".header('refresh:0; url=https://kasaranicateringcollege.co.ke/smis/home.php');}}
                 else
                 {
-                 echo "<center style ='color: red'><h3><br><br>Kindly Try again</h3></center><br><br>".header('refresh:2; url=https://kasaranicateringcollege.co.ke/smis/index.php');
+                 echo "<center style ='color: red'><h3><br><br>Kindly Try again</h3></center><br><br>".header('refresh:2; url=https://kasaranicateringcollege.co.ke/smis/login.php');
                 }
 
   

@@ -1,5 +1,5 @@
 <?php 
-$con= mysqli_connect("localhost","root","","nairobi_precision");
+include "config.php"; 
  
 if($con){
   if(isset($_POST['submit'])){
